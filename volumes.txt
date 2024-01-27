@@ -1,0 +1,6 @@
+
+Current date: 2024-01-20
+Width = 8
+Aspect ratio of the tire is = 8
+Diameter of the wheel is = 8
+Volume of the tire is = 0.0032787571021196463
