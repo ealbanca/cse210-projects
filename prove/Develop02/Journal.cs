@@ -16,7 +16,7 @@ class Journal
             Console.Write(prompt + " ");
             string content = Console.ReadLine();
             string date = DateTime.Now.ToString("MM/dd/yyyy");
-            entries.Add(new Entry(prompt, content, date));
+            entries.Add(new Entry(date, prompt, content));
         }
         /*Display entry */
         public void DisplayEntries()
@@ -35,7 +35,7 @@ class Journal
 
             using (StreamWriter writer = new StreamWriter(filename))
             {
-                writer.WriteLine("Date,Prompt,Response");
+                writer.WriteLine("Date,Prompt,Content");
 
                 foreach (Entry entry in entries)
                 {
