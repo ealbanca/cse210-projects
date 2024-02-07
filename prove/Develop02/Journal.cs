@@ -26,7 +26,7 @@ class Journal
                 Console.WriteLine(entry.ToString());
             }
         }
-        /*save entrie to File*/
+        /*save entry to File*/
 
         public void SaveToFile()
         {
@@ -55,7 +55,7 @@ class Journal
 
             using (StreamReader reader = new StreamReader(filename))
             {
-                string headerLine = reader.ReadLine(); // Read and discard the header line
+                string headerLine = reader.ReadLine();
 
                 while (!reader.EndOfStream)
                 {
